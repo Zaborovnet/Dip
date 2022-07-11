@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>map.qml</file>
+        <file>map2.qml</file>
+        <file>html/googleMaps.html</file>
+        <file>html/qwebchannel.js</file>
+        <file>html/nnn.html</file>
+        <file>html/map.html</file>
+        <file>html/index.ts</file>
+        <file>html/style.css</file>
+        <file>html/index.html</file>
+        <file>map3.qml</file>
+        <file>offline_tiles/zzzz.txt</file>
+        <file>server.qml</file>
+    </qresource>
+</RCC>

@@ -5,6 +5,10 @@
 #include <iostream>
 #include <cmath>
 
+#include <QApplication>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include "appcore.h"
 
 
 
@@ -18,13 +22,29 @@ MainWindow::MainWindow(QWidget *parent)
     ui->quickWidget->show();
     ui->quickWidget_2->setSource(QUrl(QStringLiteral("qrc:/map2.qml")));
     ui->quickWidget_2->show();
-    ui->quickWidget_3->setSource(QUrl(QStringLiteral("qrc:/map3.qml")));
-    ui->quickWidget_3->show();
+    //->quickWidget_3->setSource(QUrl(QStringLiteral("qrc:/map3.qml")));
+    //ui->quickWidget_3->show();
+    ui->quickWidget_4->setSource(QUrl(QStringLiteral("qrc:/map4.qml")));
+    ui->quickWidget_4->show();
+    ui->quickWidget_5->setSource(QUrl(QStringLiteral("qrc:/map5.qml")));
+    ui->quickWidget_5->show();
+
+
     connect(ui->pushButton,SIGNAL(clicked()),this,SLOT(digital()));
     connect(ui->pushButton_2,SIGNAL(clicked()),this,SLOT(digital1()));
     connect(ui->pushButton_3,SIGNAL(clicked()),this,SLOT(digital2()));
     connect(ui->pushButton_4,SIGNAL(clicked()),this,SLOT(digital3()));
 
+
+    QQmlApplicationEngine engine; // Создаём движок qml
+
+    AppCore appCore;    // Создаём ядро приложения
+    QQmlContext *context = engine.rootContext();    // Создаём корневой контекст
+    /* Загружаем объект в контекст для установки соединения,
+     * а также определяем имя, по которому будет происходить соединение
+     * */
+    context->setContextProperty("appCore", &appCore);
+    engine.load(QUrl(QStringLiteral("qrc:/map5.qml")));
 
 
 
@@ -602,6 +622,7 @@ void MainWindow::digital3()
 
                     ui->textEdit_6->setText(QString("%1,    %2").arg(out2.xy.x).arg(out2.xy.y));
 
+
                     //координаты двух точек
                     auto llat1 = in.xy.x;
                     auto llong1 = in.xy.y;
@@ -753,4 +774,5 @@ void MainWindow::digital3()
 
 
 }
+
 

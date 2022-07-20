@@ -1,4 +1,6 @@
-QT       += core gui \
+QT += core gui
+QT += network
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets quickwidgets
 
@@ -22,10 +24,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 INCLUDEPATH = "C:\libs_test\include"
 LIBS = -L"C:\libs_test\lib" -lproj
 SOURCES += \
+    appcore.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    appcore.h \
     mainwindow.h
 
 FORMS += \

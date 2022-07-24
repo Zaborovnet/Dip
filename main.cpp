@@ -1,12 +1,14 @@
 #include "mainwindow.h"
 #include <iostream>
 
-
+#include <QGuiApplication>
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include "appcore.h"
+#include "AppCore.h"
 #include <proj.h>
+
+#include <QQmlComponent>
 
 
 
@@ -16,15 +18,14 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
 
+
     QApplication app(argc, argv);
+
+
     MainWindow w;
     w.show();
 
-    QQmlApplicationEngine engine; // Создаём движок qml
 
-    AppCore appCore;    // Создаём ядро приложения
-    engine.rootContext()->setContextProperty("appCore", &appCore);
-    engine.load(QUrl::fromLocalFile("map5.qml"));
 
 
     //PJ_INFO vers;
@@ -36,4 +37,6 @@ int main(int argc, char *argv[])
 
 
     return app.exec();
+    //return a.exec();
+
 }

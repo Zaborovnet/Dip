@@ -6,9 +6,13 @@
 #include <cmath>
 
 #include <QApplication>
+#include <QGuiApplication>
+#include <QQmlComponent>
+
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include "appcore.h"
+#include "AppCore.h"
+#include <QQuickView>
 
 
 
@@ -26,8 +30,10 @@ MainWindow::MainWindow(QWidget *parent)
     //ui->quickWidget_3->show();
     ui->quickWidget_4->setSource(QUrl(QStringLiteral("qrc:/map4.qml")));
     ui->quickWidget_4->show();
-    ui->quickWidget_5->setSource(QUrl(QStringLiteral("qrc:/map5.qml")));
-    ui->quickWidget_5->show();
+    //ui->quickWidget_5->setSource(QUrl(QStringLiteral("qrc:/map5.qml")));
+    //ui->quickWidget_5->show();
+    ui->quickWidget_6->setSource(QUrl(QStringLiteral("qrc:/map6.qml")));
+    ui->quickWidget_6->show();
 
 
     connect(ui->pushButton,SIGNAL(clicked()),this,SLOT(digital()));
@@ -36,15 +42,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButton_4,SIGNAL(clicked()),this,SLOT(digital3()));
 
 
-    QQmlApplicationEngine engine; // Создаём движок qml
 
-    AppCore appCore;    // Создаём ядро приложения
-    QQmlContext *context = engine.rootContext();    // Создаём корневой контекст
-    /* Загружаем объект в контекст для установки соединения,
-     * а также определяем имя, по которому будет происходить соединение
-     * */
-    context->setContextProperty("appCore", &appCore);
-    engine.load(QUrl(QStringLiteral("qrc:/map5.qml")));
 
 
 
@@ -401,6 +399,7 @@ void MainWindow::digital2()
 void MainWindow::digital3()
 {
 
+
     auto rad = 6372795;
 
     int i = ui->comboBox->currentIndex(); /// номер текущего итема по счёту начиная с 0
@@ -444,6 +443,47 @@ void MainWindow::digital3()
 
 
            ui->textEdit_6->setText(QString("%1,    %2").arg(out2.xy.x).arg(out2.xy.y));
+
+
+           int z1=1;
+           auto tilelat1 = long2tilex(out2.xy.x, z1);
+           auto tilelong1 = lat2tiley(out2.xy.y, z1);
+
+
+
+
+//           QQmlEngine engine;
+
+
+//           QQmlComponent component(&engine,QUrl("qrc:/map5.qml"));
+//           QObject *object = component.create();
+
+//           QString returnedValue;
+//           QString m="http://127.0.1.1/hot";
+//           QString ms=".png";
+//           QString msg = QString("%1/%2/%3/%4%5").arg(m).arg(z1).arg(tilelat1).arg(tilelong1).arg(ms);
+//           QMetaObject::invokeMethod(object, "myQmlFunction",
+//                   Q_RETURN_ARG(QString, returnedValue),
+//                   Q_ARG(QString, msg));
+
+
+//           qDebug() << "QML function returned:" << returnedValue;
+//           delete object;
+
+
+           QVariantMap params
+           {
+               {"osm.mapping.host","http://127.0.1.1/hot/6/0/0.png"},
+               {"osm.mapping.cache.directory","./mapCache/map"},
+               {"osm.mapping.providersrepository.disable",true},
+               {"osm.mapping.highdpi_tiles",true}
+
+           };
+
+           QQuickView *view = new QQuickView;
+           view->setSource(QUrl(QStringLiteral("qrc:/map6.qml")));
+           QObject *item = (QObject *) view->rootObject();
+           QMetaObject::invokeMethod(item, "initializePlugin", Q_ARG(QVariant, QVariant::fromValue(params)));
 
         //координаты двух точек
         auto llat1 = string.toDouble();
@@ -774,5 +814,25 @@ void MainWindow::digital3()
 
 
 }
+int MainWindow:: long2tilex(double lon, int z)
+{
+    return (int)(floor((lon + 180.0) / 360.0 * (1 << z)));
+}
 
+int MainWindow:: lat2tiley(double lat, int z)
+{
+    double latrad = lat * M_PI/180.0;
+    return (int)(floor((1.0 - asinh(tan(latrad)) / M_PI) / 2.0 * (1 << z)));
+}
+
+double MainWindow:: tilex2long(int x, int z)
+{
+    return x / (double)(1 << z) * 360.0 - 180;
+}
+
+double MainWindow:: tiley2lat(int y, int z)
+{
+    double n = M_PI - 2.0 * M_PI * y / (double)(1 << z);
+    return 180.0 / M_PI * atan(0.5 * (exp(n) - exp(-n)));
+}
 

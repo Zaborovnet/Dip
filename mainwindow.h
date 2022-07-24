@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "appcore.h"
+#include "AppCore.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,6 +23,13 @@ private slots:
     void digital1();
     void digital2();
     void digital3();
+    int long2tilex(double lon, int z);
+    int lat2tiley(double lat, int z);
+    double tilex2long(int x, int z);
+    double tiley2lat(int y, int z);
+
+
+
 
 
 

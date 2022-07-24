@@ -24,12 +24,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 INCLUDEPATH = "C:\libs_test\include"
 LIBS = -L"C:\libs_test\lib" -lproj
 SOURCES += \
-    appcore.cpp \
+    AppCore.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    appcore.h \
+    AppCore.h \
     mainwindow.h
 
 FORMS += \

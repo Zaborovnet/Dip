@@ -224,7 +224,7 @@ for i in range (10):
     img, label = TEST_DATASET[i]
     plt.imshow(img.permute(1, 2, 0))
     print('Label:', DATASET.classes[label], ', Predicted:', predict_image(img, mlp))
-    plt.savefig('data/FF/objects/to.png')
+    plt.savefig('data/FF/objects/'+str(i)+'.png')
     plt.show()
 
 

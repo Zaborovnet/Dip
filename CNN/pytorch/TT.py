@@ -161,28 +161,28 @@ print(class_names)
 print(len(class_names))
 
 
-train_size = int(0.8 * len(DATASET))
+train_size = int(0.99 * len(DATASET))
 val_size = len(DATASET) - train_size
 TRAIN_DATASET, TEST_DATASET = torch.utils.data.random_split(
     DATASET, [train_size, val_size]
 )
 
 from torchvision.models import resnet18
-model1 = resnet18(pretrained=True)
+#model1 = resnet18(pretrained=False)
 
-#model1 = timm.create_model('vit_base_patch16_224',pretrained=True)
+model1 = timm.create_model('vit_base_patch16_224',pretrained=True)
 
 supervised = SupervisedLightningModule(model1)
-trainer = pl.Trainer(max_epochs=20,) # gpus=-1
+trainer = pl.Trainer(max_epochs=40,) # gpus=-1
 train_loader = DataLoader(
     TRAIN_DATASET,
-    batch_size=128,
+    batch_size=8,
     shuffle=True,
     drop_last=True,
 )
 val_loader = DataLoader(
     TEST_DATASET,
-    batch_size=128,
+    batch_size=8,
     shuffle=True,
     drop_last=True,
 )
@@ -212,7 +212,7 @@ y_pred=preds
 y_true=labels
 
 from sklearn.metrics import classification_report
-print(classification_report(y_true, y_pred, target_names=class_names, digits=4))
+print(classification_report(y_true, y_pred, target_names=class_names, digits=2))
 
-save_path = './TT.pth'
+save_path = './NewTT2.pth'
 torch.save(model1.state_dict(), save_path)

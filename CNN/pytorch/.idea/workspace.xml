@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee46f092-ba8e-429a-beea-ee7fbe3c5c35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.~lock.README.docx#" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/CoardServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CoardServer/Server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CoardServer/coordinates.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/PredictServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/Table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/app.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/create.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/gg.bash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/objects/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/start.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TT.py" beforeDir="false" afterPath="$PROJECT_DIR$/TT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PredictServer/Table.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PredictServer/Table.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

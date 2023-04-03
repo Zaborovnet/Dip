@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee46f092-ba8e-429a-beea-ee7fbe3c5c35" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/clean.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/get.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PredictServer/Table.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PredictServer/Table.py" afterDir="false" />
     </list>

@@ -22,9 +22,7 @@ for row in rows:
 url = 'http://localhost:5000/'
 filename = '0.png'
 
-#data = {'number': 123, 'longitude': 45.123, 'latitude': -123.456, 'image': open(filename, "rb"), 'time': str(datetime.datetime.now())}
 response = requests.post('http://localhost:5000/', data={'number': 1, 'longitude': 45.678, 'latitude': 32.123, 'time': str(datetime.datetime.now()), 'type': 'unknown'}, files={'image': open('0.png', 'rb')})
-#response = requests.post(url, data=data)
 print(response.status_code)
 print(response.text)
 if response.status_code == 200:

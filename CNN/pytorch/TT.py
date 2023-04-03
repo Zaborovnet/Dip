@@ -118,7 +118,7 @@ class SupervisedLightningModule(pl.LightningModule):
 
     def configure_optimizers(self):
         optimizer = getattr(optim, self.hparams.get("optimizer", "Adam"))
-        lr = self.hparams.get("lr", 1e-4)
+        lr = self.hparams.get("lr", 1e-4) #функция потерь
         weight_decay = self.hparams.get("weight_decay", 1e-6)
         return optimizer(self.parameters(), lr=lr, weight_decay=weight_decay)
 

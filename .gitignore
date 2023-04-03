@@ -1,6 +1,5 @@
 *.jpg
 *.jpeg
-*.PNG
 *.aspx
 *.cls
 *.JPEG
@@ -22,3 +21,4 @@
 *.2
 *.jp2
 *.pth
+*.PNG

@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee46f092-ba8e-429a-beea-ee7fbe3c5c35" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/testCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.~lock.README.docx#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/CoardServer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CoardServer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CoardServer/Server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CoardServer/coordinates.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/PredictServer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/Table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/create.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/gg.bash" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/objects/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TT.py" beforeDir="false" afterPath="$PROJECT_DIR$/TT.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +57,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/denis/Documents/DIP7/CNN/pytorch",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/denis/Documents/DIP7/CNN/pytorch&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.testCNN">
     <configuration name="TT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pytorch" />
@@ -181,6 +205,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/PycharmProjects/pytorch/venv/lib/python3.10/site-packages/pytorch_lightning/core/mixins/hparams_mixin.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

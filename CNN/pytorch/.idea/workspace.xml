@@ -5,10 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee46f092-ba8e-429a-beea-ee7fbe3c5c35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/clean.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PredictServer/get.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/FF/objects/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/Untitled 1.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/cifar-10-batches-py/batches.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/cifar-10-batches-py/data_batch_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/cifar-10-batches-py/data_batch_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/cifar-10-batches-py/data_batch_3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/cifar-10-batches-py/data_batch_4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/cifar-10-batches-py/data_batch_5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/cifar-10-batches-py/readme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/cifar-10-batches-py/test_batch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird/birds/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird/drone/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird/fighter-jet/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird/helicopter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird/missile/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird/passenger-plane/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird/rocket/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird1/birds/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird1/drone/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird1/fighter-jet/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird1/helicopter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird1/missile/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird1/passenger-plane/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PredictServer/data/drone_or_bird1/rocket/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PredictServer/Table.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PredictServer/Table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PredictServer/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../PredictServer/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

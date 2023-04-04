@@ -5,11 +5,35 @@ import os
 import random
 import time
 import logging
+from PIL import Image
+from io import BytesIO
+
+import torch
+from PIL import Image
+from flask import Flask, request, jsonify
+import timm
+import torchvision.transforms as transforms
+import io
+from torchvision import datasets, transforms, models
+
 
 
 app = Flask(__name__)
 if __name__ == '__main__':
     app.run(debug=True)
+# Load the pre-trained model
+model = timm.create_model('vit_base_patch16_224')
+model.load_state_dict(torch.load('NewTT2.pth', map_location=torch.device('cpu')))
+model.eval()
+# Определение функции преобразования изображения
+transform = transforms.Compose([
+        transforms.Resize(224),
+        transforms.CenterCrop(224),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406],
+                             [0.229, 0.224, 0.225])
+])
+DATASET=datasets.ImageFolder(root=("data/drone_or_bird1"),transform=transform)
 
 @app.route('/', methods=['START_BD'])
 def start_targets():
@@ -71,11 +95,22 @@ def create_target():
     number = request.form['number']
     longitude = request.form['longitude']
     latitude = request.form['latitude']
-    image = request.files['image']
+    file = request.files['image']
     time = request.form['time']
-    type = 'unknown'
 
-    # сохранение картинки на диск
+    from PIL import Image
+    def predict_image(img, model):
+        xb = img.unsqueeze(0)
+        yb = model(xb)
+        _, preds = torch.max(yb, dim=1)
+        return DATASET.classes[preds[0].item()]
+
+    # Определение картинки для предсказания класса объекта на основе изображения
+    img = Image.open(file).resize((224, 224))
+    img = img.convert('RGB')
+    img = transforms.ToTensor()(img)
+    predicted = predict_image(img, model)
+    type = predicted
     # ...
 
     conn = psycopg2.connect(

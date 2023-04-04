@@ -8,7 +8,8 @@ import logging
 
 
 app = Flask(__name__)
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
 
 @app.route('/', methods=['START_BD'])
 def start_targets():
@@ -103,5 +104,40 @@ def create_target():
     conn.close()
 
     return '', 204
-if __name__ == '__main__':
-    app.run(debug=True)
+
+@app.route('/', methods=['PUT'])
+def update_target():
+    # изменение долготы, широты и времени объекта по номеру
+    number = request.form['number']
+    longitude = request.form['longitude']
+    latitude = request.form['latitude']
+    time = request.form['time']
+
+    conn = psycopg2.connect(
+        dbname='objects',
+        user='root',
+        password='root',
+        host='localhost',
+        port='5432'
+    )
+
+    cursor = conn.cursor()
+
+    cursor.execute(sql.SQL("""
+        UPDATE targets
+        SET longitude = {longitude},
+            latitude = {latitude},
+            time = {time}
+        WHERE number = {number}
+    """).format(
+        longitude=sql.Literal(longitude),
+        latitude=sql.Literal(latitude),
+        time=sql.Literal(time),
+        number=sql.Literal(number)
+    ))
+    conn.commit()
+
+    cursor.close()
+    conn.close()
+
+    return '', 204

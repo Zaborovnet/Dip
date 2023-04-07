@@ -1,8 +1,11 @@
 QT += core gui
 QT += network
+QT += qml quick
+QT += positioning
+QT += location
+QT       +=  quickcontrols2 quickwidgets
 
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets quickwidgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
 
@@ -21,16 +24,49 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 #INCLUDEPATH += "C:\msys64\home\Moon\vcpkg\installed\x64-mingw-dynamic\include"  #тут хедеры proj'a
 #LIBS += -L"C:\msys64\home\Moon\vcpkg\installed\x64-mingw-dynamic\bin" -lproj #ликовка слибой
-INCLUDEPATH = "C:\libs_test\include"
-LIBS = -L"C:\libs_test\lib" -lproj
+INCLUDEPATH = /usr/local/include
+LIBS = -L/usr/local/lib -lproj
+
+include(../lib/lib.pri)
+
 SOURCES += \
-    AppCore.cpp \
+    demoitem.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    qgeowid/background.cpp \
+    qgeowid/customtiles.cpp \
+    qgeowid/ellipse.cpp \
+    qgeowid/flags.cpp \
+    qgeowid/items.cpp \
+    qgeowid/mouse.cpp \
+    qgeowid/mytile.cpp \
+    qgeowid/mytiles.cpp \
+    qgeowid/placemark.cpp \
+    qgeowid/rectangle.cpp \
+    qgeowid/tringle.cpp \
+    qgeowid/utilities.cpp \
+    qgeowid/waveanimation.cpp \
+    qgeowid/widgets.cpp \
+    selectordialog.cpp
 
 HEADERS += \
-    AppCore.h \
-    mainwindow.h
+    demoitem.h \
+    mainwindow.h \
+    qgeowid/background.h \
+    qgeowid/customtiles.h \
+    qgeowid/ellipse.h \
+    qgeowid/flags.h \
+    qgeowid/items.h \
+    qgeowid/mouse.h \
+    qgeowid/mytile.h \
+    qgeowid/mytiles.h \
+    qgeowid/placemark.h \
+    qgeowid/rectangle.h \
+    qgeowid/tringle.h \
+    qgeowid/utilities.h \
+    qgeowid/waveanimation.h \
+    qgeowid/widgets.h \
+    selectordialog.h
 
 FORMS += \
     mainwindow.ui
@@ -42,5 +78,50 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     qml.qrc
+
+SUBDIRS += \
+    ../lib/lib.pro \
+    ../lib/lib.pro \
+    ../lib/lib.pro
+
+DISTFILES += \
+    pictures/1l.png \
+    pictures/21.png \
+    pictures/2791085.jpg \
+    pictures/6085900.jpg \
+    pictures/7629044.jpg \
+    pictures/7629161.jpg \
+    pictures/7629165.jpg \
+    pictures/7748.jpg \
+    pictures/AbsentPairTraceNmbr.png \
+    pictures/Analyze.png \
+    pictures/AutoPlanningRange.png \
+    pictures/CombatDisable.png \
+    pictures/CombatDisableHLCP.png \
+    pictures/CoordinateFailure.png \
+    pictures/FUT100.png \
+    pictures/FUT20.png \
+    pictures/FUT40.png \
+    pictures/FUT60.png \
+    pictures/FUT80.png \
+    pictures/FireFriend.png \
+    pictures/FriendlyTarget.png \
+    pictures/IPNotInSecureSector.png \
+    pictures/LaunchDisable.png \
+    pictures/LaunchDisableHLCP.png \
+    pictures/NeighborActing.png \
+    pictures/NoFreeFC.png \
+    pictures/NoInZone.png \
+    pictures/NoPairMFRLCH.png \
+    pictures/NoReadyLCH.png \
+    pictures/NoReadyMFR.png \
+    pictures/Priority.png \
+    pictures/RLRT_Interception.png \
+    pictures/RLRT_Missing.png \
+    pictures/TargetFriend.png \
+    pictures/TargetInWork.png \
+    pictures/TargetIsNotDetected.png \
+    pictures/TargetJam.png \
+    pictures/UnknownError.png
 
 

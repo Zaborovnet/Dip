@@ -19,21 +19,21 @@ Rectangle {
 
 
 
-         PluginParameter {name: "osm.mapping.host"; value: "http://127.0.1.1/hot/1/0/0.png" }
+         PluginParameter {name: "osm.mapping.host"; value: "http://192.168.56.3:80/hot/${z}/${x}/${y}.png" }
 
-         PluginParameter {
-                          name: "osm.mapping.cache.directory"
-                          value: "./mapCache/map"
-                      }
+//         PluginParameter {
+//                          name: "osm.mapping.cache.directory"
+//                          value: "./mapCache/map"
+//                      }
 
          PluginParameter {
                          name:"osm.mapping.providersrepository.disable"
                          value:true
                      }
-         PluginParameter { name: "osm.mapping.highdpi_tiles"; value: true }
+//         PluginParameter { name: "osm.mapping.highdpi_tiles"; value: true }
 
 
-     }
+//     }
 
 
 
@@ -52,3 +52,4 @@ Rectangle {
 
     }
 
+}

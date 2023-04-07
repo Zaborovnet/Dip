@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/cs2cs.dir/cs2cs.cpp.o CMakeFiles/cs2cs.dir/emess.cpp.o CMakeFiles/cs2cs.dir/utils.cpp.o -o ../../bin/cs2cs   -L/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/lib  -Wl,-rpath,/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/lib: ../../lib/libproj.so.25.9.2.0 

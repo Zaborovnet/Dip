@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/test_misc.dir/main.cpp.o CMakeFiles/test_misc.dir/test_misc.cpp.o -o ../../bin/test_misc   -L/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/lib  -Wl,-rpath,/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/lib ../../lib/libgtestd.so.1.11.0 ../../lib/libproj.so.25.9.2.0 

@@ -1,1 +1,0 @@
-/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libgmockd.so.1.11.0 -o ../../lib/libgmockd.so.1.11.0 "CMakeFiles/gmock.dir/src/gmock-all.cc.o"   -L/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/lib  -Wl,-rpath,/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/lib ../../lib/libgtestd.so.1.11.0 

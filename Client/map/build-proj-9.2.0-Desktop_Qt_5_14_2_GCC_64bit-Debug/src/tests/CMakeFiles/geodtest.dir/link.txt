@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/geodtest.dir/geodtest.c.o -o ../../bin/geodtest   -L/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/lib  -Wl,-rpath,/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/lib ../../lib/libproj.so.25.9.2.0 -lm 

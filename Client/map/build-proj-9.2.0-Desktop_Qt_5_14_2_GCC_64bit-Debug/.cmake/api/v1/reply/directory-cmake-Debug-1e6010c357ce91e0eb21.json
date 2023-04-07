@@ -1,0 +1,199 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"cmake/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 120,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 126,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 131,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 120,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 126,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 131,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/proj",
+			"paths" : 
+			[
+				{
+					"from" : "/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/cmake/project-proj-config.cmake",
+					"to" : "proj-config.cmake"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/proj",
+			"paths" : 
+			[
+				{
+					"from" : "/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/cmake/project-proj-version.cmake",
+					"to" : "proj-config-version.cmake"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/proj",
+			"exportName" : "targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "proj::@145eef247bfb46b6828c",
+					"index" : 52
+				}
+			],
+			"paths" : 
+			[
+				"cmake/CMakeFiles/Export/cf25145e585d42c15b2fbf6a47588d6e/proj-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/proj",
+			"exportName" : "targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "proj::@145eef247bfb46b6828c",
+					"index" : 52
+				}
+			],
+			"paths" : 
+			[
+				"cmake/CMakeFiles/Export/cf25145e585d42c15b2fbf6a47588d6e/proj4-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/proj4",
+			"paths" : 
+			[
+				{
+					"from" : "/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/cmake/project-proj4-config.cmake",
+					"to" : "proj4-config.cmake"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/proj4",
+			"paths" : 
+			[
+				{
+					"from" : "/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/cmake/project-proj4-version.cmake",
+					"to" : "proj4-config-version.cmake"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/proj4",
+			"exportName" : "targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "proj::@145eef247bfb46b6828c",
+					"index" : 52
+				}
+			],
+			"paths" : 
+			[
+				"cmake/CMakeFiles/Export/d88c0820c5a91065811b2f36a9b9a43e/proj-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/proj4",
+			"exportName" : "targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "proj::@145eef247bfb46b6828c",
+					"index" : 52
+				}
+			],
+			"paths" : 
+			[
+				"cmake/CMakeFiles/Export/d88c0820c5a91065811b2f36a9b9a43e/proj4-targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "cmake",
+		"source" : "cmake"
+	}
+}

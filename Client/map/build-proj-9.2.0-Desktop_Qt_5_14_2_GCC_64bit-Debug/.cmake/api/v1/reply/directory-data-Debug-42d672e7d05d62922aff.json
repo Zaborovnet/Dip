@@ -1,0 +1,57 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"data/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 102,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/share/proj",
+			"paths" : 
+			[
+				"data/proj.ini",
+				"data/world",
+				"data/other.extra",
+				"data/nad27",
+				"data/GL27",
+				"data/nad83",
+				"data/nad.lst",
+				"data/CH",
+				"data/ITRF2000",
+				"data/ITRF2008",
+				"data/ITRF2014",
+				"/home/denis/Documents/DIP7/Client/map/build-proj-9.2.0-Desktop_Qt_5_14_2_GCC_64bit-Debug/data/proj.db",
+				"data/deformation_model.schema.json",
+				"data/projjson.schema.json",
+				"data/triangulation.schema.json"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "data",
+		"source" : "data"
+	}
+}

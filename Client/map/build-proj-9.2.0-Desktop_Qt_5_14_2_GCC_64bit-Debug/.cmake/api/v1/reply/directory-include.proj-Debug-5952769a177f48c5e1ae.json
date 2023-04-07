@@ -1,0 +1,52 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/proj/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/proj",
+			"paths" : 
+			[
+				"include/proj/util.hpp",
+				"include/proj/metadata.hpp",
+				"include/proj/common.hpp",
+				"include/proj/coordinates.hpp",
+				"include/proj/crs.hpp",
+				"include/proj/datum.hpp",
+				"include/proj/coordinatesystem.hpp",
+				"include/proj/coordinateoperation.hpp",
+				"include/proj/io.hpp",
+				"include/proj/nn.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/proj",
+		"source" : "include/proj"
+	}
+}

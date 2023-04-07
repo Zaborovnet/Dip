@@ -9,7 +9,6 @@
         <file>html/style.css</file>
         <file>map4.qml</file>
         <file>map5.qml</file>
-        <file>map7.qml</file>
-        <file>TileMapForm.ui.qml</file>
+        <file>map6.qml</file>
     </qresource>
 </RCC>

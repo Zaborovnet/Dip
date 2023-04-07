@@ -1,11 +1,11 @@
 #include "mainwindow.h"
 #include <iostream>
 
-#include <QCommandLineParser>
 #include <QGuiApplication>
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include "AppCore.h"
 #include <proj.h>
 
 #include <QQmlComponent>
@@ -15,16 +15,11 @@
 int main(int argc, char *argv[])
 {
 
-    //QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
 
 
     QApplication app(argc, argv);
-
-    QCommandLineParser parser;
-    parser.addHelpOption();
-    parser.addVersionOption();
-    parser.process(app);
 
 
     MainWindow w;

@@ -20,7 +20,7 @@ Window   {
 
 
 
-         PluginParameter {name: "osm.mapping.host"; value: "http://127.0.1.1/hot/6/0/0.png" }
+         PluginParameter {name: "osm.mapping.host"; value: "http://192.168.56.101:80/hot/${z}/${x}/${y}.png" }
          PluginParameter {
                          name: "osm.mapping.cache.directory"
                          value: "./mapCache/map"
